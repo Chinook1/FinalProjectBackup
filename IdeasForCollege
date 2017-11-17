@@ -1,0 +1,27 @@
+For my Math program:
+
+1. A function which will cut the number into bits. Send it 429: it will return 3 & 13 & 11. (Root)
+2. Another function, use the above to figure out roots. The user sends a root and a number. (Root)
+3. Try having function based on the Law of cosines. (LawCosines)
+4. Function based on the Law of Sines. (LawSines)
+5. Function which will return the size of an angle, if given the other two angles. (SumOfAngles)
+6. Functions which do conversions. Radian/Degree, Celcius/Fahrenheit/Kelvin, ... (Conversion)
+7. Solving for x with Ax^2 + Bx + C = 0 (x = (-b +-)) (quadratic formula) (QuadraticEquation)
+8. Solving Direction Fields. (DirectionFields) It doesn't graph, but neg means down, pos up.
+9. Get area using the Side-Angle-Side Formula. (TrigArea)
+10. Get area using Heron's Formula. (TrigArea)
+11. Solve the recurrence relation. (RecurrenceRelation).
+12. Get amount of money will owe or gain with the simple interest formula. (Interest)
+13. Get amount of money will owe or gain with the compound interest formula. (Interest)
+
+******************************************************
+Consider checking up triginometry for more problems.
+
+14. Maybe even some stuff from Discrete. Maybe the logic design stuff? Probably too difficult.
+A*A = A (* = AND), (+ = OR), A+A = A (' = NOT. If A is 1, A' = 0)
+
+15. Also, create a function to deal with it. sqrt(-9) = 3i.
+
+16. Consider trying to solve a Differential Equations problem which I coded into my graphing calculator.
+
+If my old partner isn't taking the class this semester, could video how it works, and use that for demo.

@@ -1,0 +1,6 @@
+The class in this directory, SinesLaw, uses the law a/sin(A) = b/sin(B). 
+
+Works, however, might need to deal with the case where you can have more than one correct answer. Research that later.
+
+*****************************************************
+The version in Library+/LawSines is focused on having one part be like a library file, and have no cin or cout statements. The other part, the Interface part, will act as user interface, asking for values, and printing out answers.

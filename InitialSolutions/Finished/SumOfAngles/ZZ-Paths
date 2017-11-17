@@ -1,0 +1,101 @@
+1. g++ -c -Wall -Werror -fpic add.cpp
+2. g++ -shared -o libMyLib1.so add.o
+**********************************************
+
+3. LD_LIBRARY_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters
+
+4. export LD_LIBRARY_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters
+
+5. INCLUDE_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters
+
+6. export INCLUDE_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters
+
+7. LIBRARY_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters
+
+8. export LIBRARY_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters
+
+9. CPLUS_INCLUDE_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters
+
+10. export CPLUS_INCLUDE_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters
+
+//At this point, this stuff is for go.
+11. export GOPATH=/home/JO27592/go:/home/JO27592/Test1/information/goTest
+//I did the above command, I think, in src directory. /home/JO27592/Test1/information/goTest/src.
+
+12. go build github.com/go-redis/redis
+
+13. go build github.com/user/stringutil
+
+
+
+
+GOPATH = /home/JO27592/go:/home/JO27592/Test1/information/goTest
+
+
+package main
+
+import (
+	"fmt"
+
+	"github.com/user/stringutil"
+	//"github.com/user/redis-master"
+)
+
+func main() {
+	fmt.Printf(stringutil.Reverse("!oG ,olleH"))
+}
+
+JO27592@499502-mitll:~/go/src$ go build github.com/user/stringutil
+JO27592@499502-mitll:~/go/src$ cd ./github.com/user/hello
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ go build hello
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ ./hello
+Hello, Go!JO27592@499502-mitll:~/go/src/github.com/user/hello$ 
+
+***********************************************************************
+
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ go build github.com/user/stringutil
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ go build github.com/go-redis/redis
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ go install github.com/user/hello
+# github.com/user/hello
+./hello.go:7: imported and not used: "github.com/go-redis/redis"
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ ./hello
+Hello, Go!JO27592@499502-mitll:~/go/src/github.com/user/hello$ 
+
+
+
+**************************************************************
+
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ go build github.com/go-redis/redis
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ go build github.com/user/stringutil
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ go install helloJO27592@499502-mitll:~/go/src/github.com/user/hello$ go build yellow.goJO27592@499502-mitll:~/go/src/github.com/user/hello$ ./yellow
+Hello, Go!Did this work?
+
+
+package main
+
+import (
+	"fmt"
+
+	"github.com/user/stringutil"
+	"github.com/go-redis/redis"
+)
+
+func main() {
+	fmt.Printf(stringutil.Reverse("!oG ,olleH"))
+	client := redis.NewClient(&redis.Options{
+		Addr:     "127.0.0.1:6379",
+		})
+	defer client.Close()
+
+	fmt.Println("Did this work?")
+	fmt.Println("Another message")
+}
+
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ go build yellow.go
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ ./yellow
+Hello, Go!Did this work?
+Another message
+JO27592@499502-mitll:~/go/src/github.com/user/hello$ 
+
+alias setPaths='cd /home/JO27592/Test1/information/goTest/src; LD_LIBRARY_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters; export LD_LIBRARY_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters; INCLUDE_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters; export INCLUDE_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters; LIBRARY_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters; export LIBRARY_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters; CPLUS_INCLUDE_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters; export CPLUS_INCLUDE_PATH=/home/JO27592/Downloads/hiredis-master:/home/JO27592/Downloads/hiredis-master/adapters; export GOPATH=/home/JO27592/go:/home/JO27592/Test1/information/goTest; go build github.com/go-redis/redis; go build github.com/user/stringutil'
+

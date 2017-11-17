@@ -1,0 +1,3 @@
+solvex is a directory which solves a linear equation with two unknowns.
+I tested it with both the no solution and infinite solutions cases, and it caught both.
+

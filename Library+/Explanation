@@ -1,0 +1,16 @@
+Try to change the contents of each of the directories. For instance, in the Root directory, have to .cpp files. One named LibraryRoot.cpp, the other named InterfaceRoot.cpp. The library one will not have any cout or cin statements. That will be dealt with by the interface one.
+
+LawSines is completed. 
+Root is completed.
+SumOfAngles is completed.
+LawCosines is completed.
+Conversion is completed.
+DirectionFields is completed.
+TrigArea is completed.
+SystemLinearEquations is finished.
+
+Even is incomplete. It needs the x + y = number class which I created.
+
+The contents of the Finished directory are the problems which I have finished with. 
+
+

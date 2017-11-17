@@ -1,0 +1,1 @@
+The class in this directory, CosinesLaw, uses the law a^2 = b^2 + c^2 - 2bc*cos(A) to find values of two type. Where you know the length of two sides and the angle in-between them and want the length of the third side, or when you know the length of all of the sides, and want an angle.

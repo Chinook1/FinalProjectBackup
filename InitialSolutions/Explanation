@@ -1,0 +1,14 @@
+In this directory, I work out the code to get the problem to work. I use a main class, for dialog and the like. 
+
+The contents of the Finished directory are the problems which I have finished with. Contents of Ongoing directory are problems which are not completed.
+
+**************************************************************************************************
+
+In Library+, I then change the code so that there is another class for each original class. Each new class deals with the couts and cins, and the original class is changed so that there are no cin and cout statements. The main class for each of these changed problems should only consist of two major lines in the main function. 
+
+Line #1: creating an object of the interface class.
+Line #2, calling the InterfaceFunction function in the interface class.
+
+**************************************************************************************************
+
+In ZZ-Final, copy the .cpp and .hpp files except for the main classes from Library+ into ZZ-Final. Run it the way the project sequence part 1 code was dealt with.

@@ -1,0 +1,7 @@
+This directory has two features. 
+
+1. It will split a number into its prime constituants. In the case of 18-> 2, 3, 3. 
+
+2. It will give the user the exact answer for whatever root problem the user wants. The user enters the number and the root, and gets back the answer. In the case of the user wanting the square root of 18 -> 3 * (2)^(1/2). The function which solves this uses the function from part 1.
+
+I changed it. I changed the storage of the prime numbers from an array to a vector. I also changed the loop. Formerly, the part which split a number into its prime constituants was a for loop. The problem with it, was that no matter what number is was given, it would loop a minimum of the size of the vector. I changed it to a while loop, adding the condition that it would only loop while j (the counter) was less than the vector size AND while the current number I was finding the prime constituants for was greater than the current value the vector was at. If the number is 3, no need checking to see if 113 goes into it. 

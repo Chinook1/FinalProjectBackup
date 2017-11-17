@@ -1,0 +1,3 @@
+The class in this directory, SinesLaw, uses the law a/sin(A) = b/sin(B). 
+
+Works, however, might need to deal with the case where you can have more than one correct answer. Research that later.

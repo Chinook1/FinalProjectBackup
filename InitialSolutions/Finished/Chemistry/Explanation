@@ -1,0 +1,13 @@
+
+
+Split the contents into two or more classes. One will be ChemistryConversion, which will ONLY do conversions. 
+
+1. ChemistryConversion
+2. GasLaws
+3. 
+
+Work on InterfaceGasLaws.
+
+1. Test everything.
+2. Put the rest of the stuff in: LibraryChemistry (by rest of the stuff, I mean, proton, neutron, electron, density, molarity, molality, ...)
+3. Add the temp conversion in Conversion to LibraryChemistryConversion. Update InterfaceChemistryConversion.  

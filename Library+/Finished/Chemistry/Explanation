@@ -1,0 +1,58 @@
+
+
+Split the contents into two or more classes. One will be ChemistryConversion, which will ONLY do conversions. 
+
+1. ChemistryConversion
+2. GasLaws
+3. 
+
+Work on InterfaceGasLaws.
+
+1. Test everything.
+2. Put the rest of the stuff in: LibraryChemistry (by rest of the stuff, I mean, proton, neutron, electron, density, molarity, molality, ...)
+3. Add the temp conversion in Conversion to LibraryChemistryConversion. Update InterfaceChemistryConversion. 
+
+****************************************************************************************** 
+
+The problems solved are as follows:
+In LibraryChemistry:
+1. Density
+2. # of neutrons
+3. # of protons
+4. # of electrons
+5. Molarity
+6. Molality
+
+In LibraryChemistryConversion:
+1. Grams to Moles
+2. Moles to Grams
+3. Liter to mililiter.
+4. Mililiter to Liter.
+5. atm to mmHg
+6. mmHg to atm
+7. atm to kPa
+8. kPa to atm
+9. mmHg to kPa
+10. kPa to mmHg
+11. Grams to kilograms
+12. Kilograms to Grams.
+13. pH to pOH
+14. pOH to pH
+15. Celsius to Fahrenheit
+16. Fahrenheit to Celsius
+17. Celsius to Kelvin
+18. Kelvin to Celsius
+19. Fahrenheit to Kelvin
+20. Kelvin to Fahrenheit
+
+In LibraryGas Laws:
+1. Boyle's Law
+2. Charles's Law
+3. Amontons's Law
+4. Avagadro's Law
+5. Ideal Gas Law.
+
+
+
+
+

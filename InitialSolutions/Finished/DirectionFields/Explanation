@@ -1,0 +1,24 @@
+A class to solve the Direction Fields problem.
+
+1. Convert the array to a vector.
+
+2. Ask the user to enter the line values which are stored in the vector. (Ask the user to enter them in ascending order.)
+
+****************************************************
+The above two tasks are completed. Also, I added an option to deal with multiplication. For cases of y'=2y(y-2). It works.
+
+
+Do more testing, but pretty sure that it works.
+
+I changed it so that now it prints out where there are convergences, and where there are divergences.
+
+*****************************************************************************************
+Next step: store the key strokes into a vector, so the user doesn't have to enter the same sequence over and over again. Do this in another .cpp file. DirectionFields1.cpp. 
+Basically, for each loop of the for loop, the user has to enter a sequence of key strokes. Any mistake, and will get an incorrect answer. 
+
+Implement one of two things. 
+1. The first time it loops, record the key strokes. Use the vector for the rest of the loops.
+2. Have the user enter the key strokes outside of the for loop. When enter the for loop, only use the vector.
+
+**********************************************************************************************
+
